@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDAMENTO VISITANTES</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+
+
+    <script src="horas.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript">
+        jQuery(window).load(function ($) {
+            atualizaRelogio();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="link">
+        <a href="index.html">COLETA</a>
+        <a href="descarg.html">DESCARGA</a>
+        <a href="visitant.html">VISITANTES</a>
+    </div>
+    <div class="title">
+        <h2>AGENDAMENTO <br>VISITANTES</h2>
+    </div>
+
+    <a target="_blank"
+    href="https://docs.google.com/spreadsheets/d/1H09oY74rjdXq9uUIk970VCv4eu-p8zNdH8DlA4F0u3g/edit?usp=sharing"><img
+    src="icons8.png"></a>
+    <a target="_blank"
+    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRETS11aan3ucl3sBEeKo_RmNKjF3coDnr2i5HEyOMJYNwX_iDj0GzBjAyakOqs3QagaGJkYz90WDcQ/pubhtml?gid=0&single=true"><img
+    src="icons8-t.png"></a>
+
+
+    <form id="myForm" action="https://api.sheetmonkey.io/form/syR1S7DXSjFn4yPKQfntQq" method="post">
+
+
+        <div class="hors">
+
+            <label class="cars" for="cars">DATA E HORAS DO <br>AGENDAMENTO</label>
+            <select style="width: 110px; margin-left: 10px" name="DATA DO AGENDAMENTO">
+                <option type="date" id="data"></option>
+            </select>
+
+            <label></label>
+            <select style="width: 90px; margin-left: 10px" name="HORÁRIO DO AGENDAMENTO">
+                <option type="time" id="hora"></option>
+            </select>
+
+        </div>
+
+
+        <div class="row1">
+
+            <h1>CARGA:<input type="text" name="CARGA"></h1>
+
+            <label style="position: relative; top: 10px;">TIPO DE VISITA:</label>
+            <select style="position: relative; margin-top: 10px;" name="TIPO DE VISITA:">
+                <option value=""></option>
+                <option value="PRESTAÇÃO DE SERVIÇOA">PRESTAÇÃO DE SERVIÇOA</option>
+                <option value="ACOMPANHAR">ACOMPANHAR</option>
+                <option value="PERNOITE">PERNOITE</option>
+                <option value="TROCA DE MOTORISTA">TROCA DE MOTORISTA</option>
+            </select>
+
+            <select style="display: none;" name="MOTIVO DE ACESSO">
+                <option value="VISITANTES"></option>
+            </select>
+
+            <label style="position: relative; top: 10px;">DOCA:</label>
+            <select style="position: relative; margin-top: 10px;" name="DOCA">
+                <option value=""></option>
+                <option value="DO-01">DO-01</option>
+                <option value="DO-02">DO-02</option>
+                <option value="DO-03">DO-03</option>
+                <option value="DO-04">DO-04</option>
+                <option value="DO-05">DO-05</option>
+                <option value="DO-06">DO-06</option>
+                <option value="DO-07">DO-07</option>
+                <option value="DO-08">DO-08</option>
+                <option value="DO-09">DO-09</option>
+                <option value="DO-10">DO-10</option>
+                <option value="DO-11">DO-11</option>
+            </select>
+
+            <label style="position: relative; top: 10px;">TIPO DE VEICULO:</label>
+            <select style="position: relative; margin-top: 10px;" name="TIPO DE VEICULO">
+                <option value=""></option>
+                <option value="HR">HR</option>
+                <option value="MOTO">MOTO</option>
+                <option value="PASSEIO">PASSEIO</option>
+                <option value="TOCO">TOCO</option>
+                <option value="TRUCK">TRUCK</option>
+            </select>
+
+            <h1>1°PLACA:<input type="text" name="1°PLACA"></h1>
+
+            <h1>EMPRESA:<input type="text" name="EMPRESA"></h1>
+
+            <h1>NOME DO MOTORISTA:<input type="text" name="NOME DO MOTORISTA"></h1>
+
+            <h1>DOCUMENTO DO MOTORISTA:<input type="number" name="DOCUMENTO DO MOTORISTA"></h1>
+
+            <h1>DATA DA VISITA:<input type="date" name="DATA DA COLETA"></h1>
+
+            <h1>HORÁRIO DA VISITA:<input type="time" name="HORÁRIO DA COLETA"></h1>
+
+
+            <div class="text">
+                <label>OBSERVAÇÕES:</label>
+                <textarea id="story" name="Obs" rows="4"></textarea>
+            </div>
+            <div class="btm">
+                <button class="agendar">AGENDAR</button>
+            </div>
+        </div>
+
+    </form>
+
+    
+    <script src="man.js"></script>
+</body>
+
+</html>

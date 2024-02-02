@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDAMENTO COLETA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+
+
+    <script src="horas.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript">
+        jQuery(window).load(function ($) {
+            atualizaRelogio();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="link">
+        <a href="index.html">COLETA</a>
+        <a href="descarg.html">DESCARGA</a>
+        <a href="visitant.html">VISITANTES</a>
+    </div>
+    <div class="title">
+        <h2>AGENDAMENTO <br>COLETA</h2>
+    </div>
+
+    <a target="_blank"
+    href="https://docs.google.com/spreadsheets/d/1H09oY74rjdXq9uUIk970VCv4eu-p8zNdH8DlA4F0u3g/edit?usp=sharing"><img
+    src="icons8.png"></a>
+
+
+    <form id="myForm" action="https://api.sheetmonkey.io/form/syR1S7DXSjFn4yPKQfntQq" method="post">
+
+
+        <div class="hors">
+
+            <label class="cars" for="cars">DATA E HORAS DO <br>AGENDAMENTO</label>
+            <select style="width: 110px; margin-left: 10px" name="DATA DO AGENDAMENTO">
+                <option type="date" id="data"></option>
+            </select>
+
+            <label></label>
+            <select style="width: 90px; margin-left: 10px" name="HORÁRIO DO AGENDAMENTO">
+                <option type="time" id="hora"></option>
+            </select>
+
+        </div>
+
+
+        <div class="row1">
+
+            <h1>CARGA:<input type="text" name="CARGA"></h1>
+
+            <label style="position: relative; top: 10px;">CLIENTE:</label>
+            <select style="position: relative; margin-top: 10px;" name="CLIENTE">
+                <option value=""></option>
+                <option value="SIPCAM - 155874">SIPCAM - 155874</option>
+                <option value="FAVINI - 857441">FAVINI - 857441</option>
+                <option value="JOHNSON - 1548731">JOHNSON - 1548731</option>
+                <option value="2S">2S</option>
+            </select>
+
+            <select style="display: none;" name="MOTIVO DE ACESSO">
+                <option value="COLETA"></option>
+            </select>
+
+            <label style="position: relative; top: 10px;">DOCA:</label>
+            <select style="position: relative; margin-top: 10px;" name="DOCA">
+                <option value=""></option>
+                <option value="DO-01">DO-01</option>
+                <option value="DO-02">DO-02</option>
+                <option value="DO-03">DO-03</option>
+                <option value="DO-04">DO-04</option>
+                <option value="DO-05">DO-05</option>
+                <option value="DO-06">DO-06</option>
+                <option value="DO-07">DO-07</option>
+                <option value="DO-08">DO-08</option>
+                <option value="DO-09">DO-09</option>
+                <option value="DO-10">DO-10</option>
+                <option value="DO-11">DO-11</option>
+            </select>
+
+            <label style="position: relative; top: 10px;">TIPO DE VEICULO:</label>
+            <select style="position: relative; margin-top: 10px;" name="TIPO DE VEICULO">
+                <option value=""></option>
+                <option value="HR">HR</option>
+                <option value="MOTO">MOTO</option>
+                <option value="PASSEIO">PASSEIO</option>
+                <option value="TOCO">TOCO</option>
+                <option value="TRUCK">TRUCK</option>
+            </select>
+
+            <h1>1°PLACA:<input type="text" name="1°PLACA"></h1>
+            <h1>2°PLACA:<input type="text" name="2°PLACA"></h1>
+            <h1>3°PLACA:<input type="text" name="3°PLACA"></h1>
+
+            <label style="position: relative; top: 10px;">TRANSPORTADORA:</label>
+            <select style="position: relative; margin-top: 10px;" name="TRANSPORTADORA">
+                <option value=""></option>
+                <option value="Retira - 47847178574153">Retira - 47847178574153</option>
+                <option value="TRANSPORT - 58747852365487">TRANSPORT - 58747852365487</option>
+                <option value="VENTURIAT - 58747242568746">VENTURIAT - 58747242568746</option>
+            </select>
+
+            <h1>NOME DO MOTORISTA:<input type="text" name="NOME DO MOTORISTA"></h1>
+
+            <h1>DOCUMENTO DO MOTORISTA:<input type="number" name="DOCUMENTO DO MOTORISTA"></h1>
+
+            <h1>NOME DO AJUDANTE:<input type="text" name="NOME DO AJUDANTE"></h1>
+
+            <h1>DOCUMENTO DO AJUDANTE:<input type="number" name="DOCUMENTO DO AJUDANTE"></h1>
+
+            <h1>DATA DA COLETA:<input type="date" name="DATA DA COLETA"></h1>
+
+            <h1>HORÁRIO DA COLETA:<input type="time" name="HORÁRIO DA COLETA"></h1>
+
+
+            <h1>PEDIDOS:<input type="text" name="PEDIDOS"></h1>
+
+            <div class="text">
+                <label>OBSERVAÇÕES:</label>
+                <textarea id="story" name="Obs" rows="5"></textarea>
+            </div>
+            <div class="btm">
+                <button class="agendar">AGENDAR</button>
+            </div>
+        </div>
+
+    </form>
+
+    <script src="man.js"></script>
+</body>
+
+</html>
