@@ -164,7 +164,7 @@ top: 10px;
 text-decoration: none;
 padding: 1px 10px;
 font-size: 15px;
-right: 20px;
+right: 90px;
 background: rgb(228, 226, 226);
 color: rgb(71, 71, 71);
 border-radius: 3px;
@@ -172,7 +172,7 @@ font-weight: 600;
 position: relative;
 z-index: 1;
 text-align: center;
-width: 90px;
+width: 120px;
 margin-top: 5px;
 top: 20px;
 }
