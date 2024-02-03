@@ -31,28 +31,16 @@
     </div>
 
     <a target="_blank"
-    href="https://docs.google.com/spreadsheets/d/1H09oY74rjdXq9uUIk970VCv4eu-p8zNdH8DlA4F0u3g/edit?usp=sharing"><img
-    src="icons8.png"></a>
+        href="https://docs.google.com/spreadsheets/d/1H09oY74rjdXq9uUIk970VCv4eu-p8zNdH8DlA4F0u3g/edit?usp=sharing"><img
+            src="icons8.png"></a>
     <a target="_blank"
-    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRETS11aan3ucl3sBEeKo_RmNKjF3coDnr2i5HEyOMJYNwX_iDj0GzBjAyakOqs3QagaGJkYz90WDcQ/pubhtml?gid=0&single=true"><img
-    src="icons8-t.png"></a>
+        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRETS11aan3ucl3sBEeKo_RmNKjF3coDnr2i5HEyOMJYNwX_iDj0GzBjAyakOqs3QagaGJkYz90WDcQ/pubhtml?gid=0&single=true"><img
+            src="icons8-t.png"></a>
 
     <form id="myForm" action="https://api.sheetmonkey.io/form/syR1S7DXSjFn4yPKQfntQq" method="post">
 
 
-        <div class="hors">
 
-            <label class="cars" for="cars">DATA E HORAS DO <br>AGENDAMENTO</label>
-            <select style="width: 110px; margin-left: 10px" name="DATA DO AGENDAMENTO">
-                <option type="date" id="data"></option>
-            </select>
-
-            <label></label>
-            <select style="width: 90px; margin-left: 10px" name="HORÁRIO DO AGENDAMENTO">
-                <option type="time" id="hora"></option>
-            </select>
-
-        </div>
 
 
         <div class="row1">
@@ -71,6 +59,27 @@
             <select style="display: none;" name="MOTIVO DE ACESSO">
                 <option value="COLETA"></option>
             </select>
+
+            <div class="hors">
+
+                <select style="width: 110px; margin-left: 10px" name="DATA DO AGENDAMENTO">
+                    <option type="date" id="data"></option>
+                </select>
+    
+                <select style="width: 90px; margin-left: 10px" name="HORÁRIO DO AGENDAMENTO">
+                    <option type="time" id="hora"></option>
+                </select>
+
+                <input type="text" name="DATA DA ENTRADA">
+                <input type="text" name="HORAS DA ENTRADA">
+                <input type="text" name="DATA DA SAIDA">
+                <input type="text" name="HORAS DA SAIDA">
+
+            </div>
+
+            
+            
+
 
             <label style="position: relative; top: 10px;">DOCA:</label>
             <select style="position: relative; margin-top: 10px;" name="DOCA">
@@ -136,7 +145,10 @@
 
     </form>
 
-    <script src="man.js"></script>
+
+
+
+   <script src="man.js"></script>
 </body>
 
 </html>

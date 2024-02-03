@@ -36,31 +36,11 @@ form h1 {
 }
 
 .hors {
-  position: relative;
-  font-size: 16px;
-  font-weight: 700;
-  
-margin-right: 700px;
-bottom: 60px;
+  display: none;
 }
 
-.hors label {
-  position: relative;
-  top: 10px;
 
-} 
 
-.hors select {
-  width: 8%;
-  padding: 2px;
-  border-radius: 3px;
-  border: none;
-  background: rgb(228, 226, 226);
-  color: rgb(46, 46, 46);
-  position: relative;
-  left: 10px;
-  
-}
 
 .row1 {
   position: absolute;

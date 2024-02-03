@@ -41,19 +41,6 @@
     <form id="myForm" action="https://api.sheetmonkey.io/form/syR1S7DXSjFn4yPKQfntQq" method="post">
 
 
-        <div class="hors">
-
-            <label class="cars" for="cars">DATA E HORAS DO <br>AGENDAMENTO</label>
-            <select style="width: 110px; margin-left: 10px" name="DATA DO AGENDAMENTO">
-                <option type="date" id="data"></option>
-            </select>
-
-            <label></label>
-            <select style="width: 90px; margin-left: 10px" name="HORÁRIO DO AGENDAMENTO">
-                <option type="time" id="hora"></option>
-            </select>
-
-        </div>
 
 
         <div class="row1">
@@ -72,6 +59,23 @@
             <select style="display: none;" name="MOTIVO DE ACESSO">
                 <option value="VISITANTES"></option>
             </select>
+
+            <div class="hors">
+
+                <select style="width: 110px; margin-left: 10px" name="DATA DO AGENDAMENTO">
+                    <option type="date" id="data"></option>
+                </select>
+    
+                <select style="width: 90px; margin-left: 10px" name="HORÁRIO DO AGENDAMENTO">
+                    <option type="time" id="hora"></option>
+                </select>
+
+                <input type="text" name="DATA DA ENTRADA">
+                <input type="text" name="HORAS DA ENTRADA">
+                <input type="text" name="DATA DA SAIDA">
+                <input type="text" name="HORAS DA SAIDA">
+
+            </div>
 
             <label style="position: relative; top: 10px;">DOCA:</label>
             <select style="position: relative; margin-top: 10px;" name="DOCA">
